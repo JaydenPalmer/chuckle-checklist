@@ -14,7 +14,7 @@ useEffect(() => {
       "told": false
     })
     setInputBtn(false)
-    
+    setTextInput('')
     
   }
 })
@@ -27,6 +27,7 @@ useEffect(() => {
       <div className="joke-add-form">
         <input className="joke-input" 
           type="text"
+          value={textInput}
           placeholder="New One Liner"
           onChange={(event) => {
           const newJokeInput = setTextInput(event.target.value)
